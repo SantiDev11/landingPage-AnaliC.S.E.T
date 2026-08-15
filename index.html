@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis Histórico del Comité CSET con IA | SENA</title>
+    <meta name="description"
+        content="Proyecto académico del SENA CSET Bucaramanga para el análisis histórico del Comité de Evaluación y Seguimiento mediante herramientas de análisis de datos e inteligencia artificial." />
+    <meta name="theme-color" content="#007832" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar" id="navbar">
+        <nav class="container nav-container" aria-label="Navegación principal">
+            <a href="#inicio" class="nav-logo" aria-label="SENA CSET Bucaramanga - Inicio">
+                <img src="img/logosena.png" alt="Logo SENA" class="nav-logo-icon" />
+                <div class="nav-logo-text">
+                    <strong>SENA</strong>
+                    <small>CSET Bucaramanga</small>
+                </div>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#introduccion" class="nav-link">Introducción</a></li>
+                <li><a href="#cset" class="nav-link">C.S.E.T.</a></li>
+                <li><a href="#problema" class="nav-link">Problema</a></li>
+                <li><a href="#objetivos" class="nav-link">Objetivos</a></li>
+                <li><a href="#alcance" class="nav-link">Alcance</a></li>
+                <li><a href="#informacion" class="nav-link">Información</a></li>
+                <li><a href="#ia" class="nav-link">IA</a></li>
+                <li><a href="#metodologia" class="nav-link">Metodología</a></li>
+                <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                <li><a href="#introduccion" class="btn nav-btn">Conocer el proyecto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="inicio" aria-label="Portada del proyecto">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                        Proyecto SENA · CSET Bucaramanga · 2026
+                    </span>
+                    <h1>Análisis Histórico del Comité CSET con <span>IA</span> para la Identificación de Patrones en
+                        Casos</h1>
+                    <p class="hero-subtitle">Proyecto de análisis de datos aplicado al histórico del Comité de
+                        Evaluación y Seguimiento del SENA.</p>
+                    <p class="hero-text">Este proyecto busca analizar la información histórica de los comités del Centro
+                        de Servicios Empresariales y Turísticos (CSET) del SENA Bucaramanga mediante técnicas de
+                        inteligencia artificial, con el objetivo de identificar patrones en los casos tratados por el
+                        comité.</p>
+                    <div class="hero-actions">
+                        <a href="#introduccion" class="btn">Conocer el proyecto</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="ai-network">
+                        <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Líneas de conexión -->
+                            <line x1="200" y1="160" x2="80" y2="60" stroke="#007832" stroke-width="1.5"
+                                stroke-opacity="0.3" />
+                            <line x1="200" y1="160" x2="320" y2="60" stroke="#007832" stroke-width="1.5"
+                                stroke-opacity="0.3" />
+                            <line x1="200" y1="160" x2="60" y2="240" stroke="#007832" stroke-width="1.5"
+                                stroke-opacity="0.3" />
+                            <line x1="200" y1="160" x2="340" y2="240" stroke="#007832" stroke-width="1.5"
+                                stroke-opacity="0.3" />
+                            <line x1="200" y1="160" x2="200" y2="290" stroke="#007832" stroke-width="1.5"
+                                stroke-opacity="0.3" />
+                            <line x1="80" y1="60" x2="320" y2="60" stroke="#007832" stroke-width="1"
+                                stroke-opacity="0.2" />
+                            <line x1="60" y1="240" x2="340" y2="240" stroke="#007832" stroke-width="1"
+                                stroke-opacity="0.2" />
+                            <line x1="80" y1="60" x2="60" y2="240" stroke="#007832" stroke-width="1"
+                                stroke-opacity="0.2" />
+                            <line x1="320" y1="60" x2="340" y2="240" stroke="#007832" stroke-width="1"
+                                stroke-opacity="0.2" />
+                            <line x1="80" y1="60" x2="200" y2="290" stroke="#007832" stroke-width="1"
+                                stroke-opacity="0.2" />
+                            <line x1="320" y1="60" x2="200" y2="290" stroke="#007832" stroke-width="1"
+                                stroke-opacity="0.2" />
+                            <line x1="60" y1="240" x2="200" y2="290" stroke="#007832" stroke-width="1"
+                                stroke-opacity="0.2" />
+                            <line x1="340" y1="240" x2="200" y2="290" stroke="#007832" stroke-width="1"
+                                stroke-opacity="0.2" />
+
+                            <!-- Nodos -->
+                            <circle class="node" cx="200" cy="160" r="28" fill="#007832" />
+                            <circle class="node" cx="200" cy="160" r="12" fill="#ffffff" />
+                            <circle class="node node-2" cx="80" cy="60" r="14" fill="#007832" fill-opacity="0.7" />
+                            <circle class="node node-3" cx="320" cy="60" r="14" fill="#007832" fill-opacity="0.7" />
+                            <circle class="node node-4" cx="60" cy="240" r="14" fill="#007832" fill-opacity="0.7" />
+                            <circle class="node node-5" cx="340" cy="240" r="14" fill="#007832" fill-opacity="0.7" />
+                            <circle class="node node-2" cx="200" cy="290" r="14" fill="#007832" fill-opacity="0.7" />
+
+                            <!-- Puntos pequeños -->
+                            <circle cx="140" cy="110" r="4" fill="#007832" fill-opacity="0.4" />
+                            <circle cx="260" cy="110" r="4" fill="#007832" fill-opacity="0.4" />
+                            <circle cx="130" cy="200" r="4" fill="#007832" fill-opacity="0.4" />
+                            <circle cx="270" cy="200" r="4" fill="#007832" fill-opacity="0.4" />
+                            <circle cx="200" cy="60" r="4" fill="#007832" fill-opacity="0.4" />
+                            <circle cx="200" cy="260" r="4" fill="#007832" fill-opacity="0.4" />
+                        </svg>
+                    </div>
+                    <div class="hero-chip chip-1">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 3v18h18" />
+                            <path d="M7 14l4-4 4 3 5-6" />
+                        </svg>
+                        Análisis de datos
+                    </div>
+                    <div class="hero-chip chip-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8" />
+                        </svg>
+                        Inteligencia Artificial
+                    </div>
+                    <div class="hero-chip chip-3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                        Patrones
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ INTRODUCCIÓN ============ -->
+        <section id="introduccion" aria-label="Introducción">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Introducción</span>
+                    <h2 class="section-title">Contexto del <span>Proyecto</span></h2>
+                </div>
+
+                <div class="intro-grid">
+                    <div class="intro-text reveal">
+                        <p>El Comité de Evaluación y Seguimiento del SENA es el espacio encargado de analizar
+                            situaciones académicas y disciplinarias de los aprendices.</p>
+                        <p>En el CSET Bucaramanga estos procesos generan una gran cantidad de información registrada
+                            principalmente en actas en formato PDF y consolidados anuales en Excel.</p>
+                        <p>Actualmente existe un histórico de estos documentos, pero no se ha realizado un análisis
+                            sistemático de la información que permita identificar patrones o tendencias en los casos que
+                            llegan al comité.</p>
+                        <p>Este proyecto propone utilizar técnicas de análisis de datos e inteligencia artificial para
+                            explorar este histórico y generar conocimiento útil a partir de la información existente.
+                        </p>
+                    </div>
+
+                    <div class="intro-visual reveal reveal-delay-1">
+                        <div class="intro-card">
+                            <div class="intro-card-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <path d="M14 2v6h6" />
+                                    <path d="M8 13h8M8 17h8M8 9h2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Actas en PDF</h3>
+                                <p>Registro de los casos tratados por el comité.</p>
+                            </div>
+                        </div>
+
+                        <div class="intro-card">
+                            <div class="intro-card-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Consolidados en Excel</h3>
+                                <p>Información organizada por año.</p>
+                            </div>
+                        </div>
+
+                        <div class="intro-card highlight-card">
+                            <div class="intro-card-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Información histórica</h3>
+                                <p>Base para el análisis con inteligencia artificial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SOBRE EL C.S.E.T. ============ -->
+        <section id="cset" class="cset" aria-label="Sobre el C.S.E.T.">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Institución</span>
+                    <h2 class="section-title">Centro de Servicios Empresariales y Turísticos — <span>C.S.E.T.</span>
+                    </h2>
+                </div>
+
+                <div class="cset-grid">
+                    <div class="cset-text reveal">
+                        <p>El Centro de Servicios Empresariales y Turísticos (C.S.E.T.) hace parte de la Regional
+                            Santander del Servicio Nacional de Aprendizaje — SENA y se encuentra ubicado en la ciudad de
+                            Bucaramanga.</p>
+                        <p>El C.S.E.T. pertenece a la Regional Santander del SENA y es un centro de formación ubicado en
+                            Bucaramanga.</p>
+                        <div class="cset-address">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <div>
+                                <strong>Sede principal</strong>
+                                <p>Cra. 27 No. 15-07, Bucaramanga.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cset-card reveal reveal-delay-1">
+                        <div class="cset-card-item">
+                            <strong>SENA</strong>
+                            <span>Servicio Nacional de Aprendizaje</span>
+                        </div>
+                        <div class="cset-card-item">
+                            <strong>Regional Santander</strong>
+                        </div>
+                        <div class="cset-card-item highlight">
+                            <strong>C.S.E.T.</strong>
+                            <span>Centro de Servicios Empresariales y Turísticos</span>
+                        </div>
+                        <div class="cset-card-item">
+                            <strong>Bucaramanga</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="identidad reveal">
+                    <h3>Identidad del <span>Proyecto</span></h3>
+                    <div class="identidad-flow">
+                        <div class="identidad-step">SENA</div>
+                        <div class="identidad-arrow" aria-hidden="true">↓</div>
+                        <div class="identidad-step">Regional Santander</div>
+                        <div class="identidad-arrow" aria-hidden="true">↓</div>
+                        <div class="identidad-step">C.S.E.T. Bucaramanga</div>
+                        <div class="identidad-arrow" aria-hidden="true">↓</div>
+                        <div class="identidad-step">Comité de Evaluación y Seguimiento</div>
+                        <div class="identidad-arrow" aria-hidden="true">↓</div>
+                        <div class="identidad-step">Proyecto de análisis de datos e IA</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROBLEMA ============ -->
+        <section id="problema" class="problema" aria-label="Planteamiento del problema">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Problema</span>
+                    <h2 class="section-title">Planteamiento del <span>Problema</span></h2>
+                </div>
+
+                <div class="problema-flow reveal">
+                    <div class="problema-col causas">
+                        <h3>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e67e22"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 9v4M12 17h.01" />
+                                <path
+                                    d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" />
+                            </svg>
+                            Causas
+                        </h3>
+                        <ul>
+                            <li>La información se encuentra distribuida en actas en PDF y archivos Excel.</li>
+                            <li>No existe un análisis automatizado de los datos históricos.</li>
+                            <li>Los datos no han sido utilizados para identificar tendencias o patrones.</li>
+                        </ul>
+                    </div>
+
+                    <div class="problema-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <div class="problema-col problema-central">
+                        <h3>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8v4M12 16h.01" />
+                            </svg>
+                            Problema
+                        </h3>
+                        <p>Falta de análisis del histórico del Comité de Evaluación y Seguimiento del CSET Bucaramanga
+                            mediante herramientas de análisis de datos e inteligencia artificial.</p>
+                    </div>
+
+                    <div class="problema-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <div class="problema-col efectos">
+                        <h3>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e74c3c"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 9v4M12 17h.01" />
+                                <path
+                                    d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" />
+                            </svg>
+                            Efectos
+                        </h3>
+                        <ul>
+                            <li>No se identifican causas recurrentes en los casos del comité.</li>
+                            <li>No se aprovecha la información histórica para generar conocimiento.</li>
+                            <li>Los informes se limitan a registros administrativos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ OBJETIVO GENERAL ============ -->
+        <section id="objetivos" class="objetivo-general" aria-label="Objetivo general">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag">Objetivos</span>
+                    <h2 class="section-title">Objetivo General</h2>
+                </div>
+
+                <div class="objetivo-card reveal reveal-delay-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="6" />
+                        <circle cx="12" cy="12" r="2" />
+                    </svg>
+                    <p>Analizar el histórico de los comités del CSET Bucaramanga mediante herramientas de análisis de
+                        datos e inteligencia artificial para identificar patrones en los casos tratados.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ OBJETIVOS ESPECÍFICOS ============ -->
+        <section aria-label="Objetivos específicos">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Objetivos</span>
+                    <h2 class="section-title">Objetivos <span>Específicos</span></h2>
+                </div>
+
+                <div class="objetivos-grid">
+                    <div class="objetivo-card-item reveal">
+                        <div class="objetivo-num">01</div>
+                        <div class="objetivo-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <path d="M7 10l5 5 5-5" />
+                                <path d="M12 15V3" />
+                            </svg>
+                        </div>
+                        <p>Recolectar y organizar la información histórica de las actas del comité.</p>
+                    </div>
+
+                    <div class="objetivo-card-item reveal reveal-delay-1">
+                        <div class="objetivo-num">02</div>
+                        <div class="objetivo-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
+                            </svg>
+                        </div>
+                        <p>Estructurar los datos provenientes de documentos PDF y Excel.</p>
+                    </div>
+
+                    <div class="objetivo-card-item reveal reveal-delay-2">
+                        <div class="objetivo-num">03</div>
+                        <div class="objetivo-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8" />
+                            </svg>
+                        </div>
+                        <p>Aplicar técnicas de análisis de datos e inteligencia artificial para detectar patrones.</p>
+                    </div>
+
+                    <div class="objetivo-card-item reveal reveal-delay-3">
+                        <div class="objetivo-num">04</div>
+                        <div class="objetivo-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="M7 14l4-4 4 3 5-6" />
+                            </svg>
+                        </div>
+                        <p>Generar informes y visualizaciones que permitan comprender tendencias en los casos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ALCANCE ============ -->
+        <section id="alcance" class="alcance" aria-label="Alcance del proyecto">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Alcance</span>
+                    <h2 class="section-title">Alcance del <span>Proyecto</span></h2>
+                </div>
+
+                <div class="alcance-text reveal">
+                    <p>El proyecto se desarrollará en el Centro de Servicios Empresariales y Turísticos (CSET) del SENA
+                        Bucaramanga.</p>
+                    <p>El análisis se realizará sobre el histórico de actas del Comité de Evaluación y Seguimiento
+                        almacenadas en documentos PDF y archivos Excel consolidados por año.</p>
+                    <p>El proyecto tiene un enfoque analítico, por lo que no busca modificar los procesos del comité ni
+                        intervenir en las decisiones institucionales, sino analizar la información existente para
+                        identificar patrones y tendencias mediante herramientas de inteligencia artificial.</p>
+                </div>
+
+                <div class="alcance-grid">
+                    <div class="alcance-block incluye reveal">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <path d="M22 4L12 14.01l-3-3" />
+                            </svg>
+                            Incluye
+                        </h3>
+                        <div class="alcance-tags">
+                            <span class="alcance-tag">Información histórica</span>
+                            <span class="alcance-tag">Actas PDF</span>
+                            <span class="alcance-tag">Archivos Excel</span>
+                            <span class="alcance-tag">Análisis de datos</span>
+                            <span class="alcance-tag">Inteligencia Artificial</span>
+                            <span class="alcance-tag">Patrones</span>
+                            <span class="alcance-tag">Tendencias</span>
+                            <span class="alcance-tag">Informes</span>
+                            <span class="alcance-tag">Visualizaciones</span>
+                        </div>
+                    </div>
+
+                    <div class="alcance-block no-incluye reveal reveal-delay-1">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M4.9 4.9l14.2 14.2" />
+                            </svg>
+                            No incluye
+                        </h3>
+                        <div class="alcance-tags">
+                            <span class="alcance-tag">Modificación de procesos</span>
+                            <span class="alcance-tag">Intervención en decisiones institucionales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ INFORMACIÓN DEL COMITÉ ============ -->
+        <section id="informacion" aria-label="Información del comité">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Información</span>
+                    <h2 class="section-title">Información del <span>Comité</span></h2>
+                </div>
+
+                <div class="info-comite-grid">
+                    <div class="info-card reveal">
+                        <div class="info-card-header">
+                            <div class="info-card-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <h3>Departamento encargado</h3>
+                        </div>
+                        <p>Apoyo de Comité, Evaluaciones y Seguimiento.</p>
+                    </div>
+
+                    <div class="info-card reveal reveal-delay-1">
+                        <div class="info-card-header">
+                            <div class="info-card-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <path d="M14 2v6h6" />
+                                    <path d="M8 13h8M8 17h8M8 9h2" />
+                                </svg>
+                            </div>
+                            <h3>Documentos</h3>
+                        </div>
+                        <ul>
+                            <li>Actas de comité.</li>
+                            <li>Cada acta tiene fecha y consecutivo.</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card reveal reveal-delay-2">
+                        <div class="info-card-header">
+                            <div class="info-card-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
+                                </svg>
+                            </div>
+                            <h3>Formatos</h3>
+                        </div>
+                        <ul>
+                            <li>PDF.</li>
+                            <li>Excel.</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card reveal reveal-delay-3">
+                        <div class="info-card-header">
+                            <div class="info-card-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="M2 8h20M6 12h4M6 16h4" />
+                                </svg>
+                            </div>
+                            <h3>Organización</h3>
+                        </div>
+                        <ul>
+                            <li>Histórico anual consolidado en Excel.</li>
+                            <li>Copia física de documentos.</li>
+                            <li>Archivos almacenados en un computador del área.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ INTELIGENCIA ARTIFICIAL ============ -->
+        <section id="ia" class="ia" aria-label="Uso de inteligencia artificial">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Inteligencia Artificial</span>
+                    <h2 class="section-title">Uso de Inteligencia <span>Artificial</span></h2>
+                    <p class="section-desc">La Inteligencia Artificial será utilizada como herramienta de apoyo para el
+                        análisis de la información histórica y la identificación de patrones en los casos registrados.
+                    </p>
+                </div>
+
+                <div class="ia-grid">
+                    <div class="ia-card reveal">
+                        <div class="ia-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h3>Clasificación</h3>
+                        <p>Clasificación de tipos de casos.</p>
+                    </div>
+
+                    <div class="ia-card reveal reveal-delay-1">
+                        <div class="ia-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8" />
+                            </svg>
+                        </div>
+                        <h3>Patrones</h3>
+                        <p>Identificación de patrones.</p>
+                    </div>
+
+                    <div class="ia-card reveal reveal-delay-2">
+                        <div class="ia-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="5" cy="6" r="3" />
+                                <circle cx="19" cy="6" r="3" />
+                                <circle cx="12" cy="18" r="3" />
+                                <path d="M7.5 7.5L10.5 15.5M16.5 7.5L13.5 15.5" />
+                            </svg>
+                        </div>
+                        <h3>Agrupamiento</h3>
+                        <p>Agrupamiento de información.</p>
+                    </div>
+
+                    <div class="ia-card reveal reveal-delay-3">
+                        <div class="ia-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="M7 14l4-4 4 3 5-6" />
+                            </svg>
+                        </div>
+                        <h3>Tendencias</h3>
+                        <p>Análisis de tendencias.</p>
+                    </div>
+
+                    <div class="ia-card reveal reveal-delay-4">
+                        <div class="ia-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <path d="M14 2v6h6" />
+                                <path d="M8 13h8M8 17h8M8 9h2" />
+                            </svg>
+                        </div>
+                        <h3>Informes</h3>
+                        <p>Generación de informes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ METODOLOGÍA ============ -->
+        <section id="metodologia" aria-label="Metodología">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Metodología</span>
+                    <h2 class="section-title">Metodología <span>Scrum</span></h2>
+                    <p class="metodologia-text">El proyecto se desarrollará utilizando la metodología ágil Scrum. Esto
+                        permitirá organizar el trabajo en sprints y mejorar el seguimiento del desarrollo del proyecto.
+                    </p>
+                </div>
+
+                <div class="scrum-flow reveal">
+                    <div class="scrum-step">
+                        <span class="scrum-badge">SCRUM</span>
+                        <div>Product Owner</div>
+                    </div>
+                    <div class="scrum-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12l7 7 7-7" />
+                        </svg>
+                    </div>
+                    <div class="scrum-step">Sprint</div>
+                    <div class="scrum-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12l7 7 7-7" />
+                        </svg>
+                    </div>
+                    <div class="scrum-step">Desarrollo</div>
+                    <div class="scrum-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12l7 7 7-7" />
+                        </svg>
+                    </div>
+                    <div class="scrum-step">Revisión</div>
+                    <div class="scrum-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12l7 7 7-7" />
+                        </svg>
+                    </div>
+                    <div class="scrum-step">Resultados</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EQUIPO ============ -->
+        <section id="equipo" class="equipo" aria-label="Equipo del proyecto">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tag">Equipo</span>
+                    <h2 class="section-title">Equipo del <span>Proyecto</span></h2>
+                </div>
+
+                <div class="equipo-grid">
+                    <div class="equipo-card reveal">
+                        <div class="equipo-foto" aria-hidden="true">
+                            <!-- Coloca aquí la foto del integrante: <img src="img/jose.jpg" alt="José Alejandro Pérez" /> -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <span class="equipo-rol">Product Owner</span>
+                        <h3>José Alejandro Pérez</h3>
+                        <p>Product Owner</p>
+                    </div>
+
+                    <div class="equipo-card reveal reveal-delay-1">
+                        <div class="equipo-foto" aria-hidden="true">
+                            <!-- Coloca aquí la foto del integrante: <img src="img/kevin.jpg" alt="Kevin Santiago Pedraza" /> -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <span class="equipo-rol">Scrum Master</span>
+                        <h3>Kevin Santiago Pedraza</h3>
+                        <p>Scrum Master</p>
+                    </div>
+
+                    <div class="equipo-card reveal reveal-delay-2">
+                        <div class="equipo-foto" aria-hidden="true">
+                            <!-- Coloca aquí la foto del integrante: <img src="img/fabio.jpg" alt="Fabio Chamorro" /> -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <span class="equipo-rol">Equipo de Desarrollo</span>
+                        <h3>Fabio Chamorro</h3>
+                        <p>Equipo de Desarrollo</p>
+                    </div>
+
+                    <div class="equipo-card reveal reveal-delay-3">
+                        <div class="equipo-foto" aria-hidden="true">
+                            <!-- Coloca aquí la foto del integrante: <img src="img/juan.jpg" alt="Juan Felipe Aguillón" /> -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <span class="equipo-rol">Equipo de Desarrollo</span>
+                        <h3>Juan Felipe Aguillón</h3>
+                        <p>Equipo de Desarrollo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" aria-label="Pie de página">
+        <div class="container">
+            <img src="img/logosena.png" alt="Logo SENA" class="footer-logo" />
+            <p><strong>Proyecto académico desarrollado en el</strong><br />Servicio Nacional de Aprendizaje – SENA</p>
+            <p>Centro de Servicios Empresariales y Turísticos (CSET)<br />Bucaramanga</p>
+            <p>Año 2026</p>
+            <div class="footer-divider" aria-hidden="true"></div>
+            <p class="footer-copy">© 2026 SENA CSET Bucaramanga</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
